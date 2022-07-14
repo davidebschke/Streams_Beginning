@@ -34,7 +34,8 @@ public class Zahlen {
     public static int produktZahlen(){
          List<Integer> zahlen = Arrays.asList(9, 1, 8, 2, 7, 3, 6, 4, 5);
 
-        System.out.println(zahlen.stream().reduce(1,(x,y) ->x*y));
-        return 0;
+         int ergebnis=zahlen.stream().reduce(1,(x,y) ->x*y);
+        System.out.println(ergebnis);
+        return ergebnis;
     }
 }
